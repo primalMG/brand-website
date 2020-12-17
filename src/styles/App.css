@@ -1,0 +1,85 @@
+.app-header {
+  text-align: center;
+  height: 300px;
+  background-color: beige;
+}
+
+.header-title {
+  color: blueviolet;
+  padding-top: 25px;
+  font-size: 80px;
+  font-family: monospace;
+}
+
+.title {
+  text-align: center;
+  font-size: 80px;
+}
+
+.section-about {
+  background-color: coral;
+  height: 350px;
+}
+
+.section-images {
+  background-color: cornflowerblue;
+}
+
+.section-socials {
+  background-color: darkgrey;
+}
+
+.section-contact {
+  background-color: darksalmon;
+}
+
+
+.paragraph-copy {
+  padding: 50px 245px;
+  text-align: center;
+}
+@media screen and (max-width: 1068px) {
+  .paragraph-copy {
+    padding: 50px 75px;
+  }
+
+}
+@media screen and (max-width: 734px) {
+  .paragraph-copy {
+    padding: 50px 50px;
+  }
+}
+
+.social-media-links {
+  padding-top: 10px;
+}
+
+.contact-form {
+  text-align: center;
+}
+
+.social-media-links a:hover{
+  color: black;
+  background-color: cornflowerblue;
+  text-decoration: none;
+}
+
+.social-media-links a{
+  color: cadetblue;
+  font-size: 35px;
+  text-decoration: none;
+  transition: all 1s ease 0s;
+  padding: 10px;
+  margin: 10px;
+  background-color: azure;
+  border-radius: 50px;
+  width: 65px;
+  border-color: black;
+  border: 5px solid;
+}
+
+
+footer {
+  background-color: gray;
+  height: 50px;
+}
