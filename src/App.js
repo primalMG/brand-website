@@ -19,9 +19,10 @@ function App() {
       </Navbar.Collapse>
     </Navbar>
     <header className="app-header">
-        <h2 className="header-title">
+        <h2 className="title header-title">
           Brand website
         </h2>
+        <p className="paragraph-copy">TODO: ADD SOMETHING HERE OR REMOVE SECTION ALL TOGETHER.</p>
     </header>
     <section className="section section-about">
       <h2 className="title about-title">About Man</h2>
@@ -36,9 +37,10 @@ function App() {
         </div>
       </div>
       <div className="images-copy">
-        <h2 className="title imaages-title">Persons work</h2>
+        <h2 className="title imaages-title">About the work</h2>
       </div>
       <div className="paragraph-copy">
+        <p>Pictures/info on the persons work...</p>
         <p>See more here at: <a href="https://www.instagram.com" target="_blank">Link to Instagram</a>.</p>
       </div>
     </section>

@@ -1,61 +1,88 @@
+/* GENERIC CSS */
+
+.title {
+  text-align: center;
+  font-size: 80px;
+  padding-top: 25px;
+}
+
+@media screen and (max-width: 1068px) {
+  .title {
+    font-size: 60px;
+  }
+}
+
+@media screen and (max-width: 735px) {
+  .title {
+    font-size: 35px;
+  }
+}
+
+.paragraph-copy {
+  padding: 10px 215px;
+  font-size: 20px;
+  text-align: center;
+  font-family: Didot, serif;
+}
+
+@media screen and (max-width: 1068px) {
+  .paragraph-copy {
+    padding: 10px 100px;
+  }
+}
+
+@media screen and (max-width: 734px) {
+  .paragraph-copy {
+    padding: 10px 50px;
+  }
+}
+
+/* END GENERIC CSS */
+
+
+
+/* HEADER SECTION */
+
 .app-header {
   text-align: center;
-  height: 300px;
+  height: 200px;
   background-color: beige;
 }
 
 .header-title {
   color: blueviolet;
   padding-top: 25px;
-  font-size: 80px;
-  font-family: monospace;
 }
 
-.title {
-  text-align: center;
-  font-size: 80px;
-}
+/* ABOUT PERSON SECTION */
+
 
 .section-about {
   background-color: coral;
   height: 350px;
 }
 
+
+
+/* END ABOUT PERSON SECTION */
+
+/* ABOUT WORK SECTION */
+
 .section-images {
   background-color: cornflowerblue;
 }
+
+/* END ABOUT WORK SECTION */
+
+/* SOCIALS SECTION */
+
 
 .section-socials {
   background-color: darkgrey;
 }
 
-.section-contact {
-  background-color: darksalmon;
-}
-
-
-.paragraph-copy {
-  padding: 50px 245px;
-  text-align: center;
-}
-@media screen and (max-width: 1068px) {
-  .paragraph-copy {
-    padding: 50px 70px;
-  }
-
-}
-@media screen and (max-width: 734px) {
-  .paragraph-copy {
-    padding: 50px 50px;
-  }
-}
-
 .social-media-links {
   padding-top: 10px;
-}
-
-.contact-form {
-  text-align: center;
 }
 
 .social-media-links a:hover{
@@ -78,8 +105,26 @@
   border: 5px solid;
 }
 
+/* END SOCIALS SECTION */
+
+
+/* CONTACT SECTION */
+
+.section-contact {
+  background-color: darksalmon;
+}
+
+.contact-form {
+  text-align: center;
+}
+
+/* END CONTACT SECTION */
+
+/* SECTION FOOTER */
 
 footer {
   background-color: gray;
   height: 50px;
 }
+
+/* END SECTION FOOTER */
