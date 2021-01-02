@@ -1,8 +1,23 @@
 import './styles/App.css';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
+import nodeFetch from 'node-fetch';
+import createApi from 'unsplash-js';
+
+
 
 function App() {
+
+  const unsplash = createApi ({
+    accessKey: '8FFO-I9qdEPcJ5KQoDd7UaPg6rkFvMzCLv9Z0MxoG3k',
+    fetch: nodeFetch,
+
+  });
+
+  unsplash.photos.getRandom({count: 9}).then(result => {
+    console.log(result)
+  })
+
   return (
     <div className="App"> 
 
@@ -77,7 +92,7 @@ function App() {
 
     <footer className="footer">
       <div>
-        <p className="footer-copy">This website was designed and developed by <em><a href="https://www.instagram.com/marksman_g/" target="_blank">Marcus Gardner</a></em></p>
+        <p className="footer-copy">This website was designed and developed by: <em><a href="https://www.instagram.com/marksman_g/" target="_blank">Marcus Gardner</a>.</em></p>
       </div>
     </footer>
     </div>
