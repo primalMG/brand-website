@@ -2,11 +2,20 @@ import './styles/App.css';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import nodeFetch from 'node-fetch';
-import createApi from 'unsplash-js';
+import { createApi } from 'unsplash-js';
 
-
+const photos = {
+  
+}
 
 function App() {
+
+
+  constructor(props) {
+    super(props);
+    this.state = {date: new Date()};
+  }
+  
 
   const unsplash = createApi ({
     accessKey: '8FFO-I9qdEPcJ5KQoDd7UaPg6rkFvMzCLv9Z0MxoG3k',
@@ -14,9 +23,11 @@ function App() {
 
   });
 
-  unsplash.photos.getRandom({count: 9}).then(result => {
-    console.log(result)
-  })
+  unsplash.photos.getRandom({count: 9}).then(results => {
+    console.log(results)
+    this.setState({photos: results.data})
+    return true
+  }).catch(err => console.log('Error: ' + err + ' Occured'))
 
   return (
     <div className="App"> 
@@ -48,7 +59,7 @@ function App() {
     <section className="section section-images">
       <div className="images-container">
         <div className="col-xl-3 col-lg-4 col-sm-6">
-          {/* <img src={this.props.image} alt="image-goes here" aria-label="image" /> */}
+          <img src={this.props.image} alt="image-goes here" aria-label="image" />
         </div>
       </div>
       <div className="images-copy">
